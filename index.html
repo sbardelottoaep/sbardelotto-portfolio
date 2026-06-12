@@ -67,24 +67,36 @@
       </div>
 
       <div class="work-grid">
-        <article class="work-card fade-in">
-          <div class="thumb thumb-one"><span>01</span></div>
-          <div class="card-content"><a href="#" target="_blank">View video</a></div>
+        <article class="work-card fade-in" data-video="dQw4w9WgXcQ">
+          <div class="thumb thumb-one">
+            <span>01</span>
+            <div class="thumb-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div class="card-content"><button class="view-video-btn">▶ Watch video</button></div>
         </article>
 
-        <article class="work-card fade-in">
-          <div class="thumb thumb-two"><span>02</span></div>
-          <div class="card-content"><a href="#" target="_blank">View video</a></div>
+        <article class="work-card fade-in" data-video="dQw4w9WgXcQ">
+          <div class="thumb thumb-two">
+            <span>02</span>
+            <div class="thumb-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div class="card-content"><button class="view-video-btn">▶ Watch video</button></div>
         </article>
 
-        <article class="work-card fade-in">
-          <div class="thumb thumb-three"><span>03</span></div>
-          <div class="card-content"><a href="#" target="_blank">View video</a></div>
+        <article class="work-card fade-in" data-video="dQw4w9WgXcQ">
+          <div class="thumb thumb-three">
+            <span>03</span>
+            <div class="thumb-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div class="card-content"><button class="view-video-btn">▶ Watch video</button></div>
         </article>
 
-        <article class="work-card fade-in">
-          <div class="thumb thumb-four"><span>04</span></div>
-          <div class="card-content"><a href="#" target="_blank">View video</a></div>
+        <article class="work-card fade-in" data-video="dQw4w9WgXcQ">
+          <div class="thumb thumb-four">
+            <span>04</span>
+            <div class="thumb-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          </div>
+          <div class="card-content"><button class="view-video-btn">▶ Watch video</button></div>
         </article>
       </div>
     </section>
@@ -168,6 +180,19 @@
   <footer>
     <p>© <span id="year"></span> Sbardelotto. Gaming Video Editor.</p>
   </footer>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-backdrop" id="modalBackdrop"></div>
+    <div class="video-modal-container">
+      <button class="video-modal-close" id="modalClose" aria-label="Close video">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="video-modal-player">
+        <iframe id="videoIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
