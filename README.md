@@ -1,10 +1,9 @@
-[README.md](https://github.com/user-attachments/files/29102684/README.md)
-# Sbardelotto Portfolio — Orange Layout
+# Sbardelotto Portfolio — Purple Layout
 
 Minimal gaming portfolio redesign using the accent color:
 
 ```text
-#FF9000
+#A855F7
 ```
 
 ## Main changes
@@ -17,7 +16,7 @@ Minimal gaming portfolio redesign using the accent color:
 - Three smaller portfolio cards in a side stack
 - Services displayed in a 2x2 grid
 - About section rebuilt as a three-column composition
-- Orange accent used consistently
+- Purple accent used consistently
 - Video modal, contacts and navigation preserved
 
 ## Files
@@ -61,3 +60,29 @@ The video thumbnail is loaded automatically.
 Replace the current files in GitHub and upload the complete `assets` folder.
 
 After the commit, Vercel will update automatically.
+
+
+## Background update
+
+This version adds the Minecraft background image with:
+
+- soft blur
+- dark transparent overlay
+- subtle floating animation
+- more professional background treatment
+
+## How to upload to GitHub
+
+1. Open your GitHub repository.
+2. Click **Add file** > **Upload files**.
+3. Upload these files and folders from this version:
+   - `index.html`
+   - `styles.css`
+   - `script.js`
+   - `README.md`
+   - `assets/`
+4. If GitHub asks whether to replace files, confirm it.
+5. Scroll down and click **Commit changes**.
+6. Wait a few seconds. Vercel will redeploy automatically.
+
+Important: upload the whole `assets` folder, because the background image is inside it.
