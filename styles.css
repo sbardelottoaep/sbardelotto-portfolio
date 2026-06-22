@@ -448,7 +448,6 @@ h3 {
   border: 1px solid rgba(255,255,255,0.18);
   border-radius: 50%;
   background: rgba(11,12,14,0.82);
-  backdrop-filter: blur(7px);
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -647,8 +646,8 @@ footer {
 .video-modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(4, 5, 6, 0.88);
-  backdrop-filter: blur(8px);
+  background: rgba(4, 5, 6, 0.94);
+  /* backdrop-filter removed — kills FPS when video plays */
 }
 
 .video-modal-container {
@@ -897,8 +896,8 @@ body::before {
 
 /* Keep blur only where it really matters */
 .site-header { backdrop-filter: blur(14px); }
-.video-modal-backdrop { backdrop-filter: blur(8px); }
-.thumb-play { backdrop-filter: blur(7px); }
+.video-modal-backdrop { /* backdrop-filter removed */ }
+.thumb-play { /* backdrop-filter removed */ }
 
 /* Smooth scroll feel */
 html { scroll-behavior: smooth; }
@@ -943,4 +942,9 @@ html { scroll-behavior: smooth; }
   transform: none;
   border-color: rgba(255,255,255,0.08);
   box-shadow: none;
+}
+
+/* Pause bg animation while modal is open — frees GPU for video */
+body.modal-open::before {
+  animation-play-state: paused;
 }
