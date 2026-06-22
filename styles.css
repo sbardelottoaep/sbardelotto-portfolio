@@ -917,3 +917,23 @@ html { scroll-behavior: smooth; }
     transform: translate(-50%, -50%);
   }
 }
+
+/* Card label (Minecraft Edit / Coming soon) */
+.card-label {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  z-index: 2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
+/* Disabled coming soon button */
+.view-video-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+  pointer-events: none;
+}
