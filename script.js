@@ -78,3 +78,19 @@ document.addEventListener("keydown", (event) => {
     closeModal();
   }
 });
+
+// ── SMOOTH SCROLL for nav links ──
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// ── STAGGER fade-in for cards inside sections ──
+document.querySelectorAll('.portfolio-grid .work-card, .services-grid article').forEach((el, i) => {
+  el.style.transitionDelay = `${0.05 + i * 0.07}s`;
+});
