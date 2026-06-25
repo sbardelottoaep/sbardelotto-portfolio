@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sbardelotto | Gaming Video Editor</title>
-  <meta
-    name="description"
-    content="Sbardelotto - Gaming video editor for content creators."
-  />
+  <meta name="description" content="Sbardelotto - Gaming video editor for content creators." />
   <meta name="theme-color" content="#0b0c0e" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -16,17 +13,9 @@
   <header class="site-header">
     <nav class="nav">
       <a href="#home" class="brand">Sbardelotto</a>
-
-      <button
-        class="menu-button"
-        id="menuButton"
-        aria-label="Open menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
+      <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
       </button>
-
       <div class="nav-links" id="navLinks">
         <a href="#work">Work</a>
         <a href="#services">Services</a>
@@ -38,34 +27,17 @@
 
   <main>
     <section class="hero" id="home">
-
-
       <div class="hero-content fade-in">
         <h1>Sbardelotto</h1>
-        <p class="description">
-          Gaming video editor for content creators.
-        </p>
-
+        <p class="description">Gaming video editor for content creators.</p>
         <div class="hero-actions">
           <a href="#work" class="button primary">View Work</a>
           <a href="#contact" class="button secondary">Contact</a>
         </div>
-
         <div class="hero-details">
-          <div>
-            <span>Focus</span>
-            <strong>Gaming content</strong>
-          </div>
-
-          <div>
-            <span>Style</span>
-            <strong>Clean and fast-paced</strong>
-          </div>
-
-          <div>
-            <span>Tools</span>
-            <strong>Premiere + After Effects</strong>
-          </div>
+          <div><span>Focus</span><strong>Gaming content</strong></div>
+          <div><span>Style</span><strong>Clean and fast-paced</strong></div>
+          <div><span>Tools</span><strong>Premiere + After Effects</strong></div>
         </div>
       </div>
     </section>
@@ -76,64 +48,99 @@
           <p class="eyebrow">Selected work</p>
           <h2>Portfolio</h2>
         </div>
-
-        <p class="section-note">
-          Gaming edits for Roblox, Minecraft and creator-focused content.
-        </p>
+        <p class="section-note">Gaming edits for Roblox, Minecraft and creator-focused content.</p>
       </div>
 
       <div class="portfolio-grid">
-        <article class="work-card fade-in" data-video="XdHmuhWMpng">
-          <button class="thumb" aria-label="Watch portfolio video 1">
-            <span class="card-label">LogosBlox Edit</span>
-            <span class="thumb-play" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </span>
-          </button>
-          <button class="view-video-btn"><span>Watch video</span><span>↗</span></button>
+        <!-- Card 01 — empty -->
+        <article class="work-card work-card-empty fade-in"></article>
+
+        <!-- Card 02 — empty -->
+        <article class="work-card work-card-empty fade-in"></article>
+
+        <!-- Card 03 — empty -->
+        <article class="work-card work-card-empty fade-in"></article>
+
+        <!-- Card 04 — LogosBlox Edit inline video -->
+        <article class="work-card work-card-video fade-in">
+          <div class="inline-player" id="player-04">
+            <div class="inline-thumb" data-video="XdHmuhWMpng" tabindex="0" role="button" aria-label="Play LogosBlox Edit">
+              <img
+                src="https://i.ytimg.com/vi/XdHmuhWMpng/hqdefault.jpg"
+                alt="LogosBlox Edit thumbnail"
+                class="thumb-img"
+                loading="lazy"
+              />
+              <div class="thumb-overlay"></div>
+              <div class="thumb-play-btn" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="card-label">LogosBlox Edit</span>
+            </div>
+            <div class="inline-iframe-wrap" hidden>
+              <iframe
+                class="inline-iframe"
+                src=""
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </article>
-
-        <article class="work-card work-card-empty fade-in"></article>
-
-        <article class="work-card work-card-empty fade-in"></article>
-
-        <article class="work-card work-card-empty fade-in"></article>
       </div>
     </section>
 
+    <!-- SERVICES — remodelada -->
     <section class="section services-section" id="services">
-      <div class="services-heading fade-in">
+      <div class="services-top fade-in">
         <p class="eyebrow">Services</p>
         <h2>What I edit</h2>
       </div>
 
-      <div class="services-grid fade-in">
-        <article>
-          <h3>Roblox videos</h3>
-          <p>Gameplay, challenges, funny moments and creator content.</p>
-        </article>
-
-        <article>
-          <h3>Minecraft videos</h3>
-          <p>Gameplay, highlights, storytelling and fast-paced edits.</p>
-        </article>
+      <div class="services-list fade-in">
+        <div class="service-item">
+          <div class="service-num">01</div>
+          <div class="service-body">
+            <h3>Roblox videos</h3>
+            <p>Gameplay, challenges, funny moments and creator content.</p>
+          </div>
+          <div class="service-tag">Roblox</div>
+        </div>
+        <div class="service-item">
+          <div class="service-num">02</div>
+          <div class="service-body">
+            <h3>Minecraft videos</h3>
+            <p>Gameplay, highlights, storytelling and fast-paced edits.</p>
+          </div>
+          <div class="service-tag">Minecraft</div>
+        </div>
+        <div class="service-item">
+          <div class="service-num">03</div>
+          <div class="service-body">
+            <h3>Gaming shorts</h3>
+            <p>Short-form gaming videos for TikTok, Reels and YouTube Shorts.</p>
+          </div>
+          <div class="service-tag">Short-form</div>
+        </div>
+        <div class="service-item">
+          <div class="service-num">04</div>
+          <div class="service-body">
+            <h3>Gaming highlights</h3>
+            <p>Clean cuts, pacing, subtitles, VFX and sound design.</p>
+          </div>
+          <div class="service-tag">Highlights</div>
+        </div>
       </div>
     </section>
 
     <section class="section about-section" id="about">
       <div class="about-layout">
-        <div class="about-index fade-in">
-          <span>About</span>
-        </div>
-
+        <div class="about-index fade-in"><span>About</span></div>
         <div class="about-copy fade-in">
           <h2>Gaming editor focused on clean edits.</h2>
-
-          <p>
-            I specialize in pacing, VFX, clean cuts and a professional final result.
-          </p>
+          <p>I specialize in pacing, VFX, clean cuts and a professional final result.</p>
         </div>
-
         <div class="about-tags fade-in">
           <span>Premiere Pro</span>
           <span>After Effects</span>
@@ -150,38 +157,17 @@
         <div class="contact-copy">
           <p class="eyebrow">Contact</p>
           <h2>Send me your project.</h2>
-          <p>
-            Send me a message on any of these and let's work together!
-          </p>
+          <p>Send me a message on any of these and let's work together!</p>
         </div>
-
         <div class="contact-actions">
-          <a
-            class="contact-link primary-link"
-            href="https://discord.com/users/1490709668450795753"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>Discord</span>
-            <span>↗</span>
+          <a class="contact-link primary-link" href="https://discord.com/users/1490709668450795753" target="_blank" rel="noopener">
+            <span>Discord</span><span>↗</span>
           </a>
-
-          <a
-            class="contact-link"
-            href="https://twitter.com/sbardelottoaep"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>Twitter</span>
-            <span>↗</span>
+          <a class="contact-link" href="https://twitter.com/sbardelottoaep" target="_blank" rel="noopener">
+            <span>Twitter</span><span>↗</span>
           </a>
-
-          <a
-            class="contact-link"
-            href="mailto:sbardelotto.editor@gmail.com"
-          >
-            <span>Email</span>
-            <span>↗</span>
+          <a class="contact-link" href="mailto:sbardelotto.editor@gmail.com">
+            <span>Email</span><span>↗</span>
           </a>
         </div>
       </div>
@@ -191,37 +177,6 @@
   <footer>
     <p>© <span id="year"></span> Sbardelotto. Gaming Video Editor.</p>
   </footer>
-
-  <div class="video-modal" id="videoModal" aria-hidden="true">
-    <div class="video-modal-backdrop" id="modalBackdrop"></div>
-
-    <div
-      class="video-modal-container"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Portfolio video"
-    >
-      <button
-        class="video-modal-close"
-        id="modalClose"
-        aria-label="Close video"
-      >
-        <svg viewBox="0 0 24 24">
-          <path d="M18 6L6 18M6 6l12 12"/>
-        </svg>
-      </button>
-
-      <div class="video-modal-player">
-        <iframe
-          id="videoIframe"
-          src=""
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
