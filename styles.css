@@ -24,6 +24,21 @@ body {
   color: var(--text);
   font-family: "Inter", sans-serif;
   line-height: 1.55;
+  position: relative;
+}
+
+/* Static MC background — no filter animation, zero perf cost */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("assets/mc-bg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
 }
 
 a { color: inherit; text-decoration: none; }
