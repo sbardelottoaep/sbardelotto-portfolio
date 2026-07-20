@@ -404,21 +404,21 @@ footer {
 .client-card {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 18px 22px;
+  gap: 22px;
+  padding: 26px 32px;
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 16px;
   background: var(--surface);
   transition: border-color 0.22s, transform 0.22s;
-  min-width: 260px;
+  min-width: 340px;
 }
 .client-card:hover {
   border-color: var(--border-strong);
   transform: translateY(-2px);
 }
 .client-avatar {
-  width: 52px;
-  height: 52px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -427,17 +427,17 @@ footer {
 .client-info {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
   flex: 1;
 }
 .client-name {
   font-family: "Manrope", sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.08rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 .client-subs {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--muted);
   font-weight: 500;
 }
