@@ -393,3 +393,5 @@ footer {
   .contact-box { padding: 27px 21px; }
   .thumb-play-btn { opacity: 1; }
 }
+
+#clients{text-align:center;padding:80px}.client-card{max-width:320px;margin:auto;padding:20px;border:1px solid #6d3cff;border-radius:16px}.client-card img{width:96px;height:96px;border-radius:50%}
