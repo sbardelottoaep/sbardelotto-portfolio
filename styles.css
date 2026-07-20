@@ -394,4 +394,57 @@ footer {
   .thumb-play-btn { opacity: 1; }
 }
 
-#clients{text-align:center;padding:80px}.client-card{max-width:320px;margin:auto;padding:20px;border:1px solid #6d3cff;border-radius:16px}.client-card img{width:96px;height:96px;border-radius:50%}
+
+/* CLIENTS */
+.clients-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.client-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  transition: border-color 0.22s, transform 0.22s;
+  min-width: 260px;
+}
+.client-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+.client-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1.5px solid var(--border);
+}
+.client-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+.client-name {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.client-subs {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+.client-link {
+  font-size: 1rem;
+  color: var(--muted);
+  transition: color 0.2s;
+  padding: 4px;
+}
+.client-link:hover { color: var(--accent); }
