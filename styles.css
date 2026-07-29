@@ -33,7 +33,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("assets/mc-bg2.png");
+  background-image: url("assets/jungle-lake.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -99,9 +99,9 @@ svg { display: block; }
 /* HERO */
 .hero {
   width: min(var(--content), calc(100% - 32px));
-  min-height: 100vh;
+  min-height: auto;
   margin: 0 auto;
-  padding: 124px 0 32px;
+  padding: 124px 0 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
