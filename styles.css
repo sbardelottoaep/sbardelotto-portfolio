@@ -106,7 +106,7 @@ svg { display: block; }
   flex-direction: column;
   justify-content: center;
 }
-.hero-content { max-width: 800px; }
+.hero-content { max-width: 800px; text-align: center; margin: 0 auto; }
 .eyebrow {
   margin-bottom: 17px;
   color: var(--accent);
@@ -120,8 +120,8 @@ h1 { font-size: clamp(4.2rem, 10vw, 8.6rem); font-weight: 800; line-height: 0.88
 h2 { font-size: clamp(2.2rem, 5vw, 4.2rem); font-weight: 800; line-height: 1; letter-spacing: -0.06em; }
 h3 { font-size: 1.12rem; font-weight: 700; letter-spacing: -0.025em; }
 
-.description { max-width: 520px; margin-top: 25px; color: var(--muted); font-size: 1.08rem; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+.description { max-width: 520px; margin-top: 25px; color: var(--muted); font-size: 1.08rem; margin-left: auto; margin-right: auto; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; justify-content: center; }
 .button {
   min-height: 50px;
   display: inline-flex; align-items: center; justify-content: center;
@@ -153,6 +153,7 @@ h3 { font-size: 1.12rem; font-weight: 700; letter-spacing: -0.025em; }
   grid-template-columns: repeat(3, 1fr);
   margin-top: 40px;
   border-top: 1px solid var(--border);
+  text-align: center;
 }
 .hero-details div { padding: 18px 20px 0 0; }
 .hero-details span, .hero-details strong { display: block; }
